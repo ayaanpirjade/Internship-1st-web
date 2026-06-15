@@ -1,26 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>AYAAN PIRJADE</title>
-        <link rel="stylesheet" href="./style.css">
-    </head>
-    <body>
-        <section>
-            <div class="UserInfo">
-               <div class="leftDiv">
-                <h1>AYAAN PIRJADE</h1>
-                <p>Iam currently persuing diploma in Information and technology
-Iam expert in ai
-I wanted to be a cybersecurity expert
-I love hacking
-Wanted to be a ethical hacker</p>
-            <button class="contactBtn">Contact Me</button>
-               </div>
-               <div class="rightDiv">
-                <img src="https://avatars.githubusercontent.com/u/225470378?s=96&v=4" alt="Ayaan Pirjade">
-               </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayaan Pirjade | sometimes i code, sometimes i sleep</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    
+    <!-- navigation bar thingy -->
+    <nav>
+    <div class="nav-container">
+        <div class="logo">
+            <a href="#home">
+                <img src=".//LOGO.jpg" alt="logo" class="logo-img" onerror="this.style.display='none'; this.nextSibling.style.display='block'">
+                <span class="logo-text" style="display: none;">A.P.</span>
+            </a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#projects">MY PROJECTS</a></li>
+            <li><a href="#about">ABOUT ME</a></li>
+            <li><a href="#contact">CONTACT ME</a></li>
+        </ul>
+        <div class="nav-social">
+            <a href="https://github.com/ayaanpirjade" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</nav>
+
+    <!-- main intro bit -->
+    <section id="home">
+        <div class="hero">
+            <div class="hero-content">
+                <span class="hello">hey there, i'm</span>
+                <h1>Ayaan Pirjade</h1>
+                <div class="typing" id="typing"></div>
+                <p>so yeah, i'm that guy who spends way too much time staring at screens. currently surviving my IT diploma at AISSMS Polytechnic Pune. cybersecurity kinda got me obsessed lately - trying to figure out how to break things so i can fix them better. built some web stuff, made some projects, still learning. hit me up if you wanna talk about tech or just send memes.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="downloadResume()">
+                        <i class="fas fa-file-pdf"></i> download resume (maybe later)
+                    </button>
+                </div>
             </div>
-        </section>
-    </body>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="../LOGO.jpg" alt="Ayaan Pirjade" onerror="this.src='https://ui-avatars.com/api/?name=Ayaan+Pirjade&background=1e293b&color=fff&size=300&bold=true&length=2'">
+                    <div class="status-badge">
+                        <i class="fas fa-code"></i> open to work btw
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects section - things i actually built -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-title">
+                <i class="fas fa-rocket"></i>
+                <h2>things i've been working on</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>NCERT Padhlo</h3>
+                    <p>okay so this was a collab project with some friends. basically a website where students can get ncert stuff for free because textbooks are expensive lol. has subject-wise stuff and quizzes that i spent way too much time on.</p>
+                    <div class="tech-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JS</span>
+                    </div>
+                    <button class="btn btn-small" onclick="window.open('https://ayaanpirjade.github.io/NCERTPadhlo/', '_blank')">
+                        <i class="fab fa-github"></i> see the code
+                    </button>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-shield-virus"></i>
+                    </div>
+                    <h3>QR Code Scanner</h3>
+                    <p>just a simple qr scanner i made when i was bored one weekend. nothing fancy but it works. you point your camera at a qr code and it reads it. thats literally it.</p>
+                    <div class="tech-tags">
+                        <span>Python</span>
+                        <span>JS</span>
+                        <span>Bootstrap</span>
+                    </div>
+                    <button class="btn btn-small" onclick="window.open('https://ayaanpirjade.github.io/Qr/', '_blank')">
+                        <i class="fab fa-github"></i> check it out
+                    </button>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>this portfolio lol</h3>
+                    <p>yeah you're looking at it right now. took me a while to get it right. wanted something that doesnt look like every other portfolio out there. still tweaking things here and there.</p>
+                    <div class="tech-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <button class="btn btn-small" onclick="window.open('https://ayaanpirjade.github.io/my-portfolio/', '_blank')">
+                        <i class="fab fa-github"></i> source code
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about me - random facts -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <i class="fas fa-user-circle"></i>
+                <h2>random stuff about me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>email me</h3>
+                    <p>ayaanp.2008skp@gmail.com</p>
+                    <button class="copy-btn" onclick="copyText('ayaanp.2008skp@gmail.com')"><i class="fas fa-copy"></i> copy</button>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>phone number</h3>
+                    <p>+91 99758 34595</p>
+                    <button class="copy-btn" onclick="copyText('+919975834595')"><i class="fas fa-copy"></i> copy</button>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>where at</h3>
+                    <p>pune, maharashtra, india</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-university"></i>
+                    <h3>studying</h3>
+                    <p>diploma in IT<br>AISSMS Polytechnic Pune</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-code"></i>
+                    <h3>stuff i kinda know</h3>
+                    <div class="skills">
+                        <span>python</span>
+                        <span>html</span>
+                        <span>css</span>
+                        <span>javascript</span>
+                        <span>bootstrap</span>
+                        <span>c</span>
+                        <span>c++</span>
+                    </div>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-trophy"></i>
+                    <h3>proud moment</h3>
+                    <p>built that ncert website and actually saw people using it. felt nice ngl.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>what i wanna do</h3>
+                    <p>become a certified ethical hacker someday. cybersecurity seems fun (and pays well lol).</p>
+                </div>
+                <div class="about-card">
+                    <i class="fab fa-github"></i>
+                    <h3>my github</h3>
+                    <p><a href="https://github.com/ayaanpirjade" target="_blank">github.com/ayaanpirjade</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact - if you wanna reach out -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <i class="fas fa-paper-plane"></i>
+                <h2>wanna talk?</h2>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm" onsubmit="handleSubmit(event)">
+                    <div class="input-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="your name" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="your email" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-tag"></i>
+                        <input type="text" placeholder="subject" required>
+                    </div>
+                    <div class="input-group textarea-group">
+                        <i class="fas fa-comment-dots"></i>
+                        <textarea rows="5" placeholder="say something..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i> send message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>made with &lt;3 by ayaan | probably coding right now <i class="fas fa-shield-alt"></i></p>
+        <div class="footer-links">
+            <a href="#home">back to top</a>
+            <a href="#projects">projects</a>
+            <a href="#about">about</a>
+            <a href="#contact">contact</a>
+        </div>
+    </footer>
+
+    <div class="back-to-top">
+        <a href="#"><i class="fas fa-chevron-up"></i></a>
+    </div>
+
+    <script>
+        // mobile menu thing - because phones exist
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        if(hamburger) {
+            hamburger.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+        }
+
+        // close menu when you click a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // typing animation - just for fun
+        const thingsIDo = ["student who codes", "cybersecurity nerd", "python enjoyer", "web dev (kinda)", "ethical hacker in training"];
+        let idx = 0, charIdx = 0, deleting = false;
+        const typingBox = document.getElementById('typing');
+
+        function typeWriter() {
+            if (!typingBox) return;
+            const currentText = thingsIDo[idx];
+            if (deleting) {
+                typingBox.textContent = currentText.substring(0, charIdx - 1);
+                charIdx--;
+            } else {
+                typingBox.textContent = currentText.substring(0, charIdx + 1);
+                charIdx++;
+            }
+            
+            if (!deleting && charIdx === currentText.length) {
+                deleting = true;
+                setTimeout(typeWriter, 1800);
+            } else if (deleting && charIdx === 0) {
+                deleting = false;
+                idx = (idx + 1) % thingsIDo.length;
+                setTimeout(typeWriter, 400);
+            } else {
+                setTimeout(typeWriter, deleting ? 40 : 80);
+            }
+        }
+        typeWriter();
+
+        // copy to clipboard - handy
+        function copyText(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert('copied to clipboard: ' + text);
+            }).catch(() => {
+                alert('couldnt copy, try manual');
+            });
+        }
+
+        // contact form submit
+        function handleSubmit(e) {
+            e.preventDefault();
+            alert('thanks! i\'ll get back to you when i check my email (might take a day or two)');
+            e.target.reset();
+        }
+
+        // resume thing - not ready yet
+        function downloadResume() {
+            alert('resume not ready yet 😅 working on it though!');
+        }
+
+        // smooth scrolling for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if(href === "#" || href === "") return;
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if(target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // little console message - why not
+        console.log("hey there! thanks for checking out my portfolio 🙂");
+    </script>
+</body>
+
+</html>
